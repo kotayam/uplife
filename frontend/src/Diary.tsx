@@ -32,8 +32,6 @@ export default function Diary({
   };
 
   const editDone = () => {
-    const t = document.getElementById("title") as HTMLInputElement;
-    const d = document.getElementById("diary") as HTMLInputElement;
     if (!titleState || !diaryState) {
       setEditing(false);
       return;
