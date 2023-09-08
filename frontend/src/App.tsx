@@ -8,22 +8,20 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="bg-orange-100 font-sans">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Header />
-                <Body />
-              </>
-            }
-          />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Body />
+            </>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
 }
