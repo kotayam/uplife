@@ -4,7 +4,7 @@ import {Diary} from "../odm/model.js";
 export default class DiaryRepository {
     static async getAllDiaries() {
         try {
-            const diaries = await Diary.find();
+            const diaries = await Diary.find().sort({dateCreated: 'desc'});
             return diaries;
         } catch (e) {
             console.error(e);
