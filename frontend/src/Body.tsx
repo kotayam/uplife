@@ -38,7 +38,7 @@ export default function Body() {
 
   return (
     <div className=" flex justify-center">
-      <div className="p-2  max-w-[600px]">
+      <div className="p-2  w-[400px]">
         <CreateDiary id={id} username={username} />
         {loading? loader.map((_, idx) => <DiaryLoading key={idx}/>) : <></>}
         {diaries.map((diary) => (
