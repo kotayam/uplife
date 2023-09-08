@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: ["https://uplife.heppoko.space", "http://localhost:5173"],
+  origin: ["https://uplife.heppoko.space", "https://beautiful-treacle-c8e330.netlify.app/", "http://localhost:5173"],
   credentials: true,
 };
 
